@@ -11,27 +11,27 @@
 <body>
   <header>
     <div class="contents nav-bar">
-      <a class="logo" href="#"><img src="img/logo.png"></img></a>
+      <a class="logo" href="#top"><img src="img/logo.png"></img></a>
       <nav>
         <ul class="item-lists">
-          <li class="item-list"><a href="">Portfolio</a></li>
-          <li class="item-list"><a href="">Feature</a></li>
-          <li class="item-list"><a href="">Profile</a></li>
-          <li class="item-list"><a href="">Contact</a></li>
+          <li class="item-list"><a href="#portfolio">Portfolio</a></li>
+          <li class="item-list"><a href="#feature">Feature</a></li>
+          <li class="item-list"><a href="#profile">Profile</a></li>
+          <li class="item-list"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="main-visual">
+    <div class="main-visual" id="top">
       <div class="contents">
         <h1 class="main-visual-title">Lorem Ipsum</h1>
         <p class="main-visual-text">simply dummy text of the printing</p>
       </div>
     </div>
 
-    <section class="portfolio contents-wrap">
+    <section class="portfolio contents-wrap" id="portfolio">
       <div class="portfolio-contents">
         <h2 class="contents-title">Portfolio</h2>
         <p class="contents-text">
@@ -50,7 +50,7 @@
       </div>
     </section>
 
-    <section class="feature">
+    <section class="feature" id="feature">
       <div class="feature-contents">
         <h2 class="contents-title">Feature</h2>
         <p class="contents-text">
@@ -103,7 +103,7 @@
       </div>
     </section>
 
-    <section class="profile">
+    <section class="profile" id="profile">
       <div class="profile-contents">
         <h2 class="contents-title">Profile</h2>
         <p class="contents-text">
@@ -138,18 +138,47 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact-contents">
         <h2 class="contents-title">Contact</h2>
         <p class="contents-text">
-          <br>
-          <br>
+          It is a long established fact that a reader will be distracted by the readable<br>
+          content of a page when looking at its layout.<br>
+          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
         </p>
-
+        <div class="contact-items">
+          <div class="contact-item contact-item-right">
+            <section class="mail-box contact-box contact-right-box">
+              <div class="box-item mails">
+                <h3 class="contact-title">Mail</h3>
+                <a href="mailto:xxx@xxx.com">xxx@xxx.com</a>
+              </div>
+            </section>
+            <section class="tel-box contact-box contact-right-box">
+              <div class="box-item tels">
+                <h3 class="contact-title">Tel</h3>
+                <a href="Tel:00000000000">000-0000-0000</a>
+              </div>
+            </section>
+          </div>
+          <div class="contact-item socials">
+            <section class="social-box contact-box contact-left-box">
+              <div class="box-item">
+                <h3>SNS</h3>
+                <div class="social-icons">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+              </div>
+            </seciton>
+          </div>
+        </div>
       </div>
     </section>
-
   </main>
-
+  <footer>
+    <p>©︎ 2017 WebCamp</p>
+  </footer>
 </body>
 </html>
