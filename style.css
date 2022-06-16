@@ -87,7 +87,7 @@ header {
 }
 
 .contents-wrap {
-  padding: 90px;
+  padding: 90px 0;
 }
 
 .contents-title {
@@ -295,4 +295,144 @@ footer p {
   font-size: 16px;
   color: #fafafa;
   line-height: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  header, footer {
+    width: 100%;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .menu-icon {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fafafa;
+    border-radius: 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+  }
+
+  .menu-icon span {
+    display: block;
+    background-color: #fafafa;
+    height: 3px;
+    width: 30px;
+    border-radius: 4px;
+    position: absolute;
+  }
+
+  .menu-icon span:nth-child(1) {
+    top: 5px;
+  }
+
+  .menu-icon span:nth-child(2) {
+    top: 16px;
+  }
+  .menu-icon span:nth-child(3) {
+    bottom: 5px;
+  }
+
+  .item-lists {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .item-wrapper {
+    width: 90%;
+  }
+
+  .main-visual {
+    background-image: url("img/code.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .main-visual-title {
+    font-size: 40px;
+  }
+
+  .main-visual-text {
+    font-size: 18px;
+  }
+
+  .portfolio-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    width: 300px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .portfolio-item:nth-child(1) {
+    display: none;
+  }
+
+  .portfolio-item:nth-child(2) {
+    margin: 0 auto;
+  }
+
+  .portfolio-item:nth-child(3) {
+    display: none;
+  }
+
+  .portfolio-item:nth-child(4) {
+    margin: 10px auto;
+  }
+
+  .portfolio-item:nth-child(5) {
+    display: none;
+  }
+  .portfolio-item:nth-child(6) {
+    margin: 0 auto;
+  }
+
+  .feature-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .feature-item:nth-child(2) {
+    margin: 10px 0;
+  }
+
+  .profile-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-right-item {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .contact-items {
+    flex-direction: column;
+  }
+
+  .contact-box .box-item {
+    text-align: center;
+  }
+
+  .contact-item-right {
+    margin-bottom: 20px
+  }
 }
